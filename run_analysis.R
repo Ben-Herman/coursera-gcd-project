@@ -1,3 +1,10 @@
+# Script to process data as described in README.md
+# This script should be executed with the working directory
+# being such that it contains the folder "UCI HAR Dataset"
+# 
+# The resulting data-frame is in the variable 'dataout'
+
+
 if(.Platform$OS.type == 'windows') .Platform$file.sep <- "\\"
 # For some reason R doesn't do this automatically on my computer
 
