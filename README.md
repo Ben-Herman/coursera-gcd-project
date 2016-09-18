@@ -1,1 +1,6 @@
-# coursera-gcd-project
+# Coursera peer graded assignment:
+# Getting and Cleaning Data
+This repo contains an R script to tidy up and compute averages of a subset of data collected from humnan activity recognition experiments as described in [this archive] (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).  In brief, these experiments gathered data from smartphone accelerometer and gyroscope sensors worn by human subjects durring six categories of activities.  The main data in the archive consists of rows of macroscopic features of filtered signals and their discrete Fourier transforms.  
+## What this script does
+The original main data is spread out over eight files which this script reads and computes feature averages for each combination of subject and activity.  This is done only mean and standard deviation features.  Other features are not used.  
+The resulting feature averages are assembled into a single data-frame along with variables for activities, subjects, and whether or not the data was for training or testing.  Activities are converted from integer codes to explicit names.  Feature names are modified to remove non-letter characters, make all letters lowercase, and remove (assumingly) accidental double prints. 
